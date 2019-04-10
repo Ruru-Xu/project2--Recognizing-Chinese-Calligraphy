@@ -65,10 +65,16 @@ python setup.py install
 
   The corresponding label of the picture: https://pan.baidu.com/s/1jfAKQVjD-SMJSffOwGhh8A 密码：u7bo
 
+  first. divide the datasets into train-datasets & val-datasets
+
+  ```
+  python Pic_train-val.py
+  ```
+
   The next step is to make data in lmdb format. 
 
   ```
-  python tolmdb.py
+  python2 tolmdb.py  #note：must be python2
   ```
 
   and then....training
