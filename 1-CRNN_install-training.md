@@ -103,8 +103,10 @@ python setup.py install
 
   and then....training
 
+  The path of **train's .mdb** files & **val's .mdb files**
+
   ```
-  python crnn_main.py --trainroot /lmdb/360label/train/ --valroot /lmdb/360label/val/ --cuda
+  python crnn_main.py --trainroot lmdb_dataset/nu1/lmdb/train/ --valroot lmdb_dataset/nu1/lmdb/val/ --cuda
   ```
 
   ![1550938449295](img/1550938449295.png)
