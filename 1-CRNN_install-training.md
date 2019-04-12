@@ -105,7 +105,6 @@ python setup.py install
 
   ```
   python crnn_main.py --trainroot /lmdb/360label/train/ --valroot /lmdb/360label/val/ --cuda
-  Namespace(cuda=True, trainroot='/lmdb/360label/train/', valroot='/lmdb/360label/val/')
   ```
 
   ![1550938449295](img/1550938449295.png)
