@@ -68,14 +68,38 @@ python setup.py install
   first. divide the datasets into train-datasets & val-datasets
 
   ```
-  python Pic_train-val.py
+  actually i use my own datasets，my datasets have 10 thousands and 50 hundreds，so。。
+  i divide these images into two folders：train & val
+  i divide the labels.txt into two folders：train.txt & val.txt
   ```
 
-  The next step is to make data in lmdb format. 
+  ```
+  train folder：including 10 thousands image and the train.txt
+  val folder：including 50 hundreds image and the val.txt
+  ```
+
+  ![1555052107277](img/1555052107277.png)
+
+  The next step is to make data in lmdb format.
+
+  ```
+  create a new folder：lmdb
+  under the lmdb folder：create two folders：train & val 
+  ```
+
+  Modify the corresponding contents in the **tolmdb.py**，as a result ，generate .mdb files
+
+  Modify twice the path，corresponding **train** & **val**
+
+  ![1555052789582](img/1555052789582.png)
+
+  run twice
 
   ```
   python2 tolmdb.py  #note：must be python2
   ```
+
+  ![1555052548976](img/1555052548976.png)
 
   and then....training
 
@@ -86,4 +110,4 @@ python setup.py install
 
   ![1550938449295](img/1550938449295.png)
 
-![1550938459774](img/1550938459774.png)
+![1550938459774](img/1550938459774.png)5
